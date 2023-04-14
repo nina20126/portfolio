@@ -20,6 +20,8 @@ Tässä toisessa ikkunassa OK ja Cancel-toimivat
 
 (Must include ability to format font in new window with OK and Cancel buttons)
 
+
+
 Olympic rings (WpfApp_Olympiarenkaat)
 
 Teachers requirements: 
@@ -27,6 +29,7 @@ Piirrä olympiarenkaat 1) käyttäen Ellipse-luokkaa ja  2) Käyttäen omaa Canv
 Napin painalluksella renkaiden sijainti muuttuu ja muistuttaa kuvion hajoamista
 
 (Draw olympic rings using Ellips class and your own Canvas class with OnRender method. When pressing the button location of the rings changes)
+
 
 
 Create your own WPF Application (WpfSuunnittelijaProjekti)
