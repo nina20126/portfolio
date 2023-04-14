@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>ot4c</title>
+    </head>
+    <body>
+        <script>
+            'use strict';
+
+         /* Tee ohjelma, joka saa saa syöttötietona henkilötunnuksen ja tulostaa,  
+         millä vuosisadalla henkilö on syntynyt. 
+
+
+         
+         Henkilötunnus on muotoa ppkkvvynnnt, jossa y on sen vuosisadan tunnus, 
+         jolloin henkilö on syntynyt.
+
+         +      = 1800-luku
+         -      = 1900-luku
+         A      = 2000-luku                
+         
+         
+         Y:n arvo sijoittuu merkkijonon indeksiin 6          */
+        
+         let hetu = prompt("Syötä henkilötunnus: ", "");
+
+         if (hetu[6] === "+") {
+             alert("Olet syntynyt 1800-luvulla.");
+         } else if (hetu[6] === "-") {
+             alert("Olet syntynyt 1900-luvulla.");
+         } else if(hetu[6] === "A") {
+             alert("Olet syntynyt 2000-luvulla.");
+         } else {
+             alert("virheellinen henkilötunnus")
+         }
+        
+
+         
+        </script>
+    </body>
+</html>

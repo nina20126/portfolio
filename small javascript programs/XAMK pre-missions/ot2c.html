@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>ot2c</title>
+</head>
+<body>
+<script>
+		/*Tee ohjelma, joka laskee ja tulostaa henkilön tuloveron suuruuden valtion verotuksessa verohallinnon sivulla olevan taulukon perusteella. 
+        Syöttötietona annetaan henkilön verotettavat ansiotulot vuoden aikana. */
+
+        let vuosiTulot = prompt("Verotettavat ansiotulot vuoden aikana: ");
+
+        /*
+
+        Verotettava ansiotulo       Vero alarajan kohdalla          vero alarajan ylittävästä tulon osasta, %
+        0 - 18 100                          0€                                   0%
+        18 100 – 27 200                     8,00€                                6,00%
+        27 200 – 44 800                     554,00€                              17,25%
+        44 800 – 78 500                     3590,00                              21,25%
+        78 500 – eneemän                    10 751,25€                           31,25%
+        
+        Esimerkki:
+        Patrik tienaa 28 000 euroa vuodessa, joten ennen verovähennyksiä hän maksaa
+        valtion tuloveroa 518 e + (28 000 – 25 000) * 17,5 % = 1043 e
+        */
+
+        if (vuosiTulot <= 18100) {
+            alert("Ei tuloveroa!");
+        }
+
+        else if (vuosiTulot > 18100 && vuosiTulot <= 27200) {
+            let vero1 = 8 + (vuosiTulot - 18100) * 0.06;
+            alert("Maksat veroa " + vero1 + "€");
+        }
+
+        else if (vuosiTulot > 27200 && vuosiTulot <= 44800) {
+            let vero2 = 554 + (vuosiTulot - 27200) * 0.1725;
+            alert("Maksat veroa " + vero2 + "€");
+        }
+
+        else if (vuosiTulot > 44800 && vuosiTulot <= 78500) {
+            let vero3 = 3590 + (vuosiTulot - 44800) * 0.2125;
+            alert("Maksat veroa " + vero3 + "€");
+        }
+        
+        else if (vuosiTulot > 78500) {
+            let vero4 = 10751 + (vuosiTulot - 78500) * 0.3125;
+            alert("Maksat veroa " + vero4 + "€");
+        }
+
+
+</script>
+
+</body>
+</html>

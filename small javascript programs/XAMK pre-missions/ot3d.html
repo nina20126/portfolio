@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>ot3d</title>
+    </head>
+    <body>
+        <script>
+            'use strict';
+
+            /* Tee olio (object) nimeltä kunta. Olion ominaisuuksia ovat nimi, maakunta, 
+            pintaAla ja asukasluku. Anna ominaisuuksille seuraavat arvot: Pelkosenniemi, 
+            Lappi, 1881, 943.
+
+            Tee ohjelma, joka tulostaa olion ominaisuuksien pohjalta lauseen: 
+            Pelkosenniemi on kunta, jossa asuu 943 ihmistä. Sen pinta-ala on 1881 
+            neliökilometriä. */
+
+            // luodaan olio
+            let kunta = {
+                nimi: "Pelkosenniemi",
+                maakunta: "Lappi",
+                pintaAla: 1881,
+                asukasluku: 943,
+                tulostaTiedot: function(){  // metodi
+                    return this.nimi + " on kunta, jossa asuu " + this.asukasluku + " ihmistä. Sen pinta-ala on " + this.pintaAla + " neliökilometriä.";
+                } 
+            }
+
+            // kutsutaan metodia
+            alert(kunta.tulostaTiedot());
+        </script>
+    </body>
+</html>

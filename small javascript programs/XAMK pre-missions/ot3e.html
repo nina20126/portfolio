@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>ot3e</title>
+    </head>
+    <body>
+        <script>
+            'use strict';
+
+            /* Tee olio nimeltä suorakulmio  
+            Suorakulmiolla (eli suorakaiteella) on ominaisuudet  leveys ja korkeus.  Näiden  arvot ovat  400 ja 200
+            Lisää ohjelmaan osa, joka tulostaa olion ominaisuuksien pohjalta suorakulmion pinta-alan. */
+
+           
+
+            let suorakulmio = { // luodaan olio
+                leveys: 400,
+                korkeus: 200,
+                
+                pintaAla() {
+                alert(this.leveys * this.korkeus); // luodaan metodi
+            }
+            };
+
+            suorakulmio.pintaAla(); // kutsutaan metodia
+        </script>
+    </body>
+</html>

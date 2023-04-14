@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>ot3c</title>
+    </head>
+    <body>
+        <script>
+            'use strict';
+
+            /* Tee funktio karkausvuoden määrittämistä varten. 
+            Funktio saa parametrina vuosiluvun. Funktion pitäisi palauttaa tieto, 
+            onko kyseinen vuosi karkausvuosi. Tee myös funktion kutsu.
+
+            Vuosi on karkausvuosi, jos se on jaollinen 4:llä. Kuitenkin jos vuosi 
+            on jaollinen 100:lla, se on karkausvuosi vain silloin, kun se on jaollinen 
+            myös 400:lla
+
+            Esimerkiksi
+            vuodet 1848, 1992 ja 2000 ovat karkausvuosia.
+            Vuodet 1900, 1957 ja 2006 eivät ole karkausvuosia */
+
+            let vuosi = prompt("Anna vuosiluku: ", 0);
+            let tulos = karkausvuosi(vuosi);
+            alert(tulos);
+
+            function karkausvuosi(vuosi) {
+                if ( vuosi % 4 == 0 && (vuosi % 100 !== 0 || vuosi % 400 == 0)) {
+                    return vuosi + " on karkausvuosi";
+                } else {
+                    return vuosi + " ei ole karkausvuosi";
+                }
+            };
+
+        
+        </script>
+    </body>
+</html>

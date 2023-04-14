@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>ot4b</title>
+    </head>
+    <body>
+        <script>
+            'use strict';
+            
+        /* Tee ohjelma, jossa luodaan viiden alkion (elements)  taulukko ja 
+        jokaiseen alkioon sijoitetaan jokin kokonaisluku. Luvut voit valita itse.
+
+        Ohjelman pitäisi tulostaa lukujen summa ja keskiarvo. */
+         
+        let luvut = [1,3,5,7,9];     // Listan luvut
+        let summa = 0;              // alustetaan summa
+        let keskiarvo = 0;         // alustetaan keskiarvo
+
+        for(let i = 0; i < luvut.length; i++){ //käydään array läpi
+			summa = summa + luvut[i]; //summalaskuri
+        }
+        
+        keskiarvo = summa / 5;
+
+        alert("Lukujen summa on: " + summa + " ja keskiarvoksi tulee: " + keskiarvo);
+        </script>
+    </body>
+</html>

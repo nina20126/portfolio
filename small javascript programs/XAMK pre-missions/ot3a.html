@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>ot3a</title>
+    </head>
+    <body>
+        <script>
+        
+        /* Tee funktio nimeltä tutkiKumpiOnSuurempiLuku().  
+        Funktio  saa parametrina (parameters)  kaksi kokonaislukua ja palauttaa (return) 
+        niistä suuremman.
+
+        Tee myös funktion kutsu (call). */
+
+        "use strict"
+        
+        // kysytään käyttäjältä vertailtavia lukuja
+        let a = prompt("Anna luku: " , 0);
+        let b = prompt("Anna toinen luku: ", 0);
+
+        let suurempiLuku = tutkiKumpiOnSuurempiLuku(a,b); // funktion kutsu
+        alert(suurempiLuku);
+
+
+        function tutkiKumpiOnSuurempiLuku(a, b) {   // funktio
+            if (a > b) {
+                return a + " on suurempi";
+
+            } else if (a < b) {
+                return b + " on suurempi";
+
+            } else {
+                 return "luvut ovat yhtä suuret"; // otetaan huomioon myös tilanne jossa luvut ovat yhtä suuret
+            }
+        };
+
+        </script>
+    </body>
+</html>

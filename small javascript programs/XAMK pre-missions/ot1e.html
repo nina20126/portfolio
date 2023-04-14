@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Tuntipalkka / ot1e</title>
+</head>
+<body>
+	<script>
+        "use strict"
+
+        let tuntiPalkka = 16;
+        let yoTyoPalkka = tuntiPalkka * 2;
+     
+        let tunnitYhteensa = prompt("Montako tuntia teit töitä?");
+        let yoTunnit = prompt("Montako niistä on yötyötä?");
+
+        let normaalitTunnit = tunnitYhteensa - yoTunnit;
+        let normaaliPalkka = normaalitTunnit * tuntiPalkka
+
+        let yoPalkka = yoTunnit * yoTyoPalkka;
+
+        let kokonaisPalkka = normaaliPalkka + yoPalkka;
+        
+        alert("Kokonaispalkkasi on: " + kokonaisPalkka);
+	</script>
+</body>
+</html>
+
+

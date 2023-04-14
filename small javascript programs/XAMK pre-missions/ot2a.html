@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>ot2a</title>
+    </head>
+    <body>
+        <script>
+            'use strict';
+
+            /*
+            06.00 - 09.59 = aamu
+            10.00 - 15.59 = päivä
+            16.00 - 20.59 = ilta
+            21.00 - 05.59 = yö 
+            */
+
+
+            let kuluvaTunti = new Date().getHours();
+            let tulostus = "";
+
+
+            if(kuluvaTunti >= '06:00:00' && kuluvaTunti <= '09:59:00') {
+                tulostus = "Hyvää huomenta!";
+            } 
+            
+            else if(kuluvaTunti >= '10:00:00' && kuluvaTunti <= '15:59:00') {
+                tulostus = "Hyvää päivää!";
+            } 
+            
+            else if(kuluvaTunti >= '16:00:00' && kuluvaTunti <= '20:59:00') {
+                tulostus = "Hyvää iltaa!";
+            } 
+            
+            else{
+                tulostus = "Hyvää yötä!";
+            }
+
+            window.alert(tulostus);
+
+
+        </script>
+
+    </body>
+</html>
