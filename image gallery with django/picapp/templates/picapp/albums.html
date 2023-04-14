@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="row">
+  {% for album in albums %}
+  <div id="photo" class="col-lg-3 col-md-4 col-xs-6">
+    <div class="card">
+      <a href="{% url 'photo:photos' album.slug %}" class="d-block mb-4 h-100"><img src="{{ album.thumb.url }}"
+          class="card-img-top" alt="{{ album.title }}" /></a>
+      <div id="card-body" class="card-body">
+        <p class="card-title">{{ album.title }}</p>
+        <p class="card-text">
+          by {{ album.submitter }}
+        </p>
+        <!-- IF WANT ADD DETAILS
+        <button type="button" class="collapsible_button">Show details</button>
+        <div class="content_collasible">
+          <p class="card-text">
+            {{ album.description }} <br>
+            {{ album.created|date:"d.m.Y H:i" }}
+          </p>
+          {% if user == album.submitter %}
+          <div class="center">
+            <div class="btn-group text-center">
+              <a href="{% url 'photo:update_album' album.slug %}" class="btn btn-sm btn-outline-success">Update</a></span>
+              <a href="{% url 'photo:delete_album' album.slug %}" class="btn btn-sm btn-outline-danger">Delete</a></span>
+            </div>
+          </div>
+          {% endif %}
+        </div> -->
+      </div>
+    </div>
+  </div>
+  {% empty %}
+  <h2 class="text-center">There are no albums in this photo gallery yet!</h2>
+  <p class="text-center">Maybe add some?</p>
+  <div class="text-center">
+    <a href="{% url 'photo:create_album' %}" class="btn btn-success btn-md">Click here!</a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock body %}

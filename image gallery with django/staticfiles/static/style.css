@@ -1,0 +1,89 @@
+/* NAVBAR */
+
+.nav-item {
+  padding-right: 10px;
+}
+
+/* ALBUM AND PHOTOLIST */
+
+#card-body {
+  padding-top: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.card-img,
+.card-img-top {
+  margin-bottom: -22px;
+}
+
+.tags {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+
+p.card-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.card-text {
+  margin-bottom: 3px;
+}
+
+.btn-group {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.center {
+  text-align: center;
+  padding: 0;
+}
+
+/* BUTTON that is used to open and close the collapsible content */
+
+.collapsible_button {
+  background-color: rgb(247, 246, 246);
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible_button:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.content_collasible {
+  padding: 0 3px;
+  display: none;
+  overflow: hidden;
+  background-color: rgb(247, 246, 246);
+}
+
+/* FOR SORTING PICTURES */
+
+#sortable {
+  margin: 0;
+  padding: 0;
+}
+
+#photo {
+  padding: 5px;
+  float: left;
+}
+
+.forms {
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}

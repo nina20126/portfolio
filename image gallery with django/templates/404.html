@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<div class="mx-auto">
+
+  <div class="d-flex justify-content-center text-center">
+    <div>
+      <h1>Page not found</h1>
+      <br>
+      <img src="{% static 'images/pagenotfound.png' %}" alt="something went wrong" width="50%">
+      <br><br>
+      <p>There is nothing here. The page you're looking for may have been removed, renamed, or temporarily unavailable</p>
+      
+      <p><a class="text-dark" href="{% url 'photo:albums' %}">Go back</a></p>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

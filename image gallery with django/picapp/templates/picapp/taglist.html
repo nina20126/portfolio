@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="alert alert-secondary">
+  <h2 class="text-center">Photos with the tag {{tag}}</h2>
+</div>
+<section class="photo_gallery">
+  <div class="row" id="sortable">
+    {% load shuffle %}
+    {% for photo in tags|shuffle %}
+    <div id="photo" class="col-lg-3 col-md-4 col-xs-6">
+      <div class="card">
+        <a id="lightbox" href="{{photo.image.url}}" class="d-block mb-4 h-100">
+          <img src="{{photo.image_medium.url}}" class="card-img-top" alt="{{photo.title}}"
+            title="{{photo.title|capfirst}} by {{photo.submitter}}">
+        </a>
+        <div id="card-body" class="card-body">
+          <p class="card-title">{{ photo.title }}</p>
+          <p class="card-text">
+            by {{ photo.submitter }}
+          </p>
+          <button type="button" class="collapsible_button">Show details</button>
+          <div class="content_collasible">
+            <p class="card-text">
+              {{ photo.description }} <br>
+              {{ photo.created|date:"d.m.Y H:i" }}
+            </p>
+            {% for tag in photo.tags.all %}
+            <a class="tags" href="{% url 'photo:tag' tag.slug %}">#{{ tag.name }}&nbsp;</a>
+            {% endfor %}
+            {% if user == photo.submitter %}
+            <div class="center">
+              <div class="btn-group">
+                <!-- <a href="{% url 'photo:detail' photo.id %}" class="btn btn-sm btn-outline-primary">Details</a> -->
+                <a href="{% url 'photo:update' photo.id %}" class="btn btn-sm btn-outline-success">Update</a>
+                <a href="{% url 'photo:delete' photo.id %}" class="btn btn-sm btn-outline-danger">Delete</a>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% empty %}
+    <h2 class="text-center">There are no photos with the tag {{tag}}!</h2>
+    <p class="text-center">Maybe add some?</p>
+    <div class="text-center">
+      <a href="{% url 'photo:create' %}" class="btn btn-success btn-md">Click here!</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<br>
+
+{% endblock body %}

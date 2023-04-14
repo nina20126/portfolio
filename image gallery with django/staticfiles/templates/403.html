@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<div class="mx-auto">
+
+   <div class="d-flex justify-content-center text-center">
+      <div>
+         <h1>OOOOOPSIE!</h1>
+         <br>
+         <img src="{% static 'images/hacker.png' %}" alt="hacker" width="50%">
+         <br><br>
+         <p>You don't have permissions to be here!</p>
+      </div>
+   </div>
+</div>
+
+{% endblock body %}
