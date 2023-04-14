@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" style="text/css" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Felipa' rel='stylesheet'>
+<title>House of Horrors - Book a room </title>
+</head>
+
+<body>
+
+
+<div class="content"> <!-- content alku -->
+
+<div class="header"> <!-- header alku -->
+<h1>House of Horrors</h1>
+</div> <!-- header loppu -->
+
+<div class="topnav"> <!-- topnav alku -->
+
+	<a href="index.html">Home</a>
+	<a href="location.html">Location</a>
+	<a href="staff.html">Staff</a>
+	<a href="library.html">Library</a>
+	<a href="theatre.html">Theatre</a>
+	<a href="restaurant.html">Restaurant</a>
+	<a href="bookaroom.html">Book a room</a>
+
+</div> <!-- topnav loppu -->
+
+<div class="row"> <!-- row alku -->
+
+	<div class="leftcolumn"> <!-- left column alku -->
+	  <div class="card"> <!-- card1 alku -->
+	  <h2>Experience the unexpected and book a room!</h2>
+	  <img src="images/candle-1646765_1920.jpg" alt="Hotel backyard" width="800" height=""><br>
+	  <p>We warmly welcome you to stay at our creepy little hotel! You can book a room just for a day or two, or stay a little bit longer. Just fill the information to the form below. We will contact you soon and confirm your reservation!</p>
+		
+	<form>
+	<fieldset id="form1">
+		<legend>Book a room</legend>
+		<form action="/action_page.php" method="post>
+		
+		<label for="First Name">First name</label>
+		<input type="text" value=""><br><br>
+		
+		<label for="Last Name">Last name</label>
+		<input type="text" value=""><br><br>
+		
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email"><br><br>
+		
+		<label for="phone">Phone number</label>
+		<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+		
+		<label for="datemin">Check in</label>
+		<input type="date" id="datemin" name="datemin" min="2020-04-01"><br><br>
+		
+		<label for="datemin">Check out</label>
+		<input type="date" id="datemin" name="datemin" min="2020-04-01"><br><br>
+		
+		<label for="rooms">Choose a room</label>
+		<select id="rooms" name="rooms">
+			<option value="single" selected>Single room</option>
+			<option value="twin">Twin room</option>
+			<option value="double">Double room</option>
+			<option value="suite">Suite</option>
+		</select><br><br>
+		
+		<label for="rooms">Message</label><br><br>
+		<textarea name="message" rows="10" cols="30"></textarea><br><br>
+		
+		<input type="submit" value="Submit">
+	</fieldset>
+	</form>
+		
+		
+		</div> <!-- card1 loppu -->
+		
+		
+    </div> <!-- left column loppu -->
+	
+	
+</div> <!-- row loppu -->
+
+<div class="footer"> <!-- footer alku -->
+  <p> Copyright Nina Tulilahti 2020. All rights reserved. <br>
+  Images from <a href="https://pixabay.com/" target="_blank">Pixabay.org</a> & <a href="https://www.pexels.com/fi-fi/royalty-free-images/" target="_blank">Pexel.com</a></p>
+</div> <!-- footer loppu -->
+</div> <!-- content loppu -->
+</body>
+</html>
