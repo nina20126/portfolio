@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Valuuttalaskin</title>
+</head>
+<body>
+    <h1>Valuuttalaskin</h1>
+
+    <label for="summa">Summa:</label>
+    <input type="text" id="summa" name="summa"><br><br>
+
+    <button onclick="muunnaDollariksi();">EUR -> USD</button>
+    <button onclick="muunnaEuroksi();">USD -> EUR</button> <br><br><br>
+
+    <div id="vastaus"></div>
+    
+    <script>
+    "use strict"
+       
+    // 1€ = 1,08USD
+    // 1USD = 0,93€
+
+        const eur = 1.08;       // esitellään vakiot
+        const usd = 0.93;
+
+        let arvo = 0;           // esitellään muuttujat
+        let summa = 0;
+
+        function muunnaDollariksi() {
+            summa = Number(document.getElementById("summa").value); // muutetaan lomakkeelta saatu merkkijono numeroksi
+            arvo = summa * eur;
+            document.getElementById("vastaus").innerHTML = summa + " EUR = " + arvo + " USD";
+       }
+
+        function muunnaEuroksi() {
+            summa = Number(document.getElementById("summa").value); // muutetaan lomakkeelta saatu merkkijono numeroksi
+            arvo = summa * usd;
+            document.getElementById("vastaus").innerHTML = summa + " USD = " + arvo + " EUR";
+       }
+    </script>
+    </body>
+</html>

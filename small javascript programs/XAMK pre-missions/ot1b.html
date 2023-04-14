@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Presidentin vaalit</title>
+</head>
+<body>
+    <h1>Presidentin vaalit 2024</h1>
+    <h2>Ääntenlaskenta</h2>
+
+    <button onclick="Ville();">1.</button>
+    <button onclick="Urho();">2.</button>
+    <button onclick="Marja();">3.</button>
+    <button onclick="Sinikka();">4.</button>
+    <button onclick="Jussi();">5.</button>
+    
+    <h2>Tulos:</h2>
+    <div id="tulostusAlue1">Ville Koivisto: </div>
+    <div id="tulostusAlue2">Urho Obama: </div>
+    <div id="tulostusAlue3">Marja Kekki: </div>
+    <div id="tulostusAlue4">Sinikka Soini: </div>
+    <div id="tulostusAlue5">Jussi Haavisto: </div>
+
+    <script>
+        let luku1 = 0; 
+        let luku2 = 0;
+        let luku3 = 0;
+        let luku4 = 0;
+        let luku5 = 0;
+       
+        function Ville(){
+            
+            luku1++;
+            document.getElementById("tulostusAlue1").innerHTML = "Ville Koivisto: " + luku1 + " ääntä";
+        }
+
+        function Urho(){
+            
+            luku2++;
+            document.getElementById("tulostusAlue2").innerHTML = "Urho Obama: " + luku2 + " ääntä";
+        }
+
+        function Marja(){
+            
+            luku3++;
+            document.getElementById("tulostusAlue3").innerHTML = "Marja Kekki: " + luku3 + "ääntä";
+        }
+
+        function Sinikka(){
+           
+            luku4++;
+            document.getElementById("tulostusAlue4").innerHTML = "Sinikka Soini: " + luku4 + " ääntä";
+        }
+
+        function Jussi(){
+           
+            luku5++;
+            document.getElementById("tulostusAlue5").innerHTML = "Jussi Haavisto: " + luku5 + "ääntä";
+        }
+
+
+    </script>
+    </body>
+</html>
