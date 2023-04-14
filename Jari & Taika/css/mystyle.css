@@ -1,0 +1,138 @@
+h1 {
+  font-family: Brush Script MT;
+  color: yellow;
+  text-align: center;
+  font-size: 5em;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 4px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+a {
+  color: white;
+}
+
+.navbar {
+  background-color:rgb(0, 0, 0);
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-brand img {
+    height: 3rem;
+}
+
+.jumbotron {
+    background-color: black;
+    background-image: url(../images/guitar-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.soitin {
+  border: none;
+}
+
+iframe {
+  border: none;
+}
+
+.lead {
+  max-width: 600px;
+  font-family: 'Fredoka One', cursive;
+  font-size: x-large;
+  color: rgb(189, 158, 102);
+  -webkit-text-stroke: 1px black;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sivuotsikko h1 {
+  font-family: Brush Script MT;
+  text-align: center;
+  color: black;
+}
+
+.btn-warning {
+  background-color: rgb(192, 75, 7);
+  border: none;
+}
+
+.gallery {
+  margin: 10px 15px;
+}
+
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 150px;
+}
+
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+.footer-content{
+    padding: 15px;
+    font-size: 18px;
+    background: #dbdfe5;
+    margin-bottom: 15px;
+    margin: 0 auto;
+}
+.footer-content.bg-alt{
+    background: #abb1b8;
+}
+
+.somekuvake {
+    width: 40px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #808080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #000000;
+  }
+  
+  .yhteydenottolomake {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
