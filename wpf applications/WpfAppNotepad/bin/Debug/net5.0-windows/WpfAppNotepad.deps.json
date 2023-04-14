@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WpfAppNotepad/1.0.0": {
+        "runtime": {
+          "WpfAppNotepad.dll": {}
+        },
+        "resources": {
+          "sv-SE/WpfAppNotepad.resources.dll": {
+            "locale": "sv-SE"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WpfAppNotepad/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

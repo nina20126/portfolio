@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfSuunnittelijaProjeti2022.Monday"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSuunnittelijaProjeti2022"
+        mc:Ignorable="d"
+        Title="Monday" Height="550" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <TextBlock x:Name="ImportantTextBlock" HorizontalAlignment="Left" Margin="38,84,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="233" Width="132" Background="#FFEFFFE3"/>
+        <Label Content="Monday" HorizontalAlignment="Center" Height="56" Margin="0,23,0,0" VerticalAlignment="Top" Width="148" FontSize="36" FontFamily="Bookman Old Style"/>
+        <Calendar HorizontalAlignment="Left" Margin="598,23,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="monNote" HorizontalAlignment="Center" Margin="0,84,0,0" TextWrapping="Wrap" Text="Plan your day!" VerticalAlignment="Top" Width="364" Height="330" AcceptsReturn="True"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="627,238,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="Button_Click"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="627,307,0,0" VerticalAlignment="Top" Height="50" Width="100" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

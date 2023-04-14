@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfAppNotepad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppNotepad"
+        xmlns:p="clr-namespace:WpfAppNotepad.Properties"
+        mc:Ignorable="d"
+        Title="{x:Static p:Resources.WPFNotepad}" Height="500" Width="700">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="{x:Static p:Resources.File}">
+                <MenuItem x:Name="open" Header="{x:Static p:Resources.Open}" Click="MenuItem_Click"/>
+                <MenuItem x:Name="save" Header="{x:Static p:Resources.Save}" Click="save_Click"/>
+                <MenuItem x:Name="print" Header="{x:Static p:Resources.Print}" Click="MenuItem_Click_1"/>
+                <MenuItem x:Name="exit" Header="{x:Static p:Resources.Exit}" Click="exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="{x:Static p:Resources.Edit}">
+                <MenuItem Header="{x:Static p:Resources.Copy}" Command="ApplicationCommands.Copy"/>
+                <MenuItem Header="{x:Static p:Resources.Paste}" Command="ApplicationCommands.Paste"/>
+            </MenuItem>
+            <MenuItem Header="{x:Static p:Resources.Format}">
+                <MenuItem Header="{x:Static p:Resources.Font}" Click="MenuItem_Click_2"/>
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <RichTextBox x:Name="text_area" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderThickness="0" Background="White" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" AcceptsReturn="True">
+                <FlowDocument LineHeight="0.5">
+                    <Paragraph LineHeight="0.5">
+                        
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+        </Grid>
+    </DockPanel>
+</Window>

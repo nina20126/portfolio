@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_Laskin", "WpfApp_Laskin.csproj", "{50E5EB8C-C51E-4780-80E6-C1C3BA7A2E9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50E5EB8C-C51E-4780-80E6-C1C3BA7A2E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E5EB8C-C51E-4780-80E6-C1C3BA7A2E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E5EB8C-C51E-4780-80E6-C1C3BA7A2E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E5EB8C-C51E-4780-80E6-C1C3BA7A2E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4026888-F001-4EF5-919F-379FFD23B95A}
+	EndGlobalSection
+EndGlobal

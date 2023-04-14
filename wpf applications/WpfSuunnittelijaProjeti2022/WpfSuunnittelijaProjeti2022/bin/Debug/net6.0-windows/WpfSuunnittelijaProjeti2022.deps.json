@@ -1,0 +1,63 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WpfSuunnittelijaProjeti2022/1.0.0": {
+        "dependencies": {
+          "WpfAppNotepad": "1.0.0",
+          "WpfAppOlympiaRenkaat": "1.0.0",
+          "WpfApp_Laskin": "1.0.0"
+        },
+        "runtime": {
+          "WpfSuunnittelijaProjeti2022.dll": {}
+        }
+      },
+      "WpfAppNotepad/1.0.0": {
+        "runtime": {
+          "WpfAppNotepad.dll": {}
+        },
+        "resources": {
+          "sv-SE/WpfAppNotepad.resources.dll": {
+            "locale": "sv-SE"
+          }
+        }
+      },
+      "WpfAppOlympiaRenkaat/1.0.0": {
+        "runtime": {
+          "WpfAppOlympiaRenkaat.dll": {}
+        }
+      },
+      "WpfApp_Laskin/1.0.0": {
+        "runtime": {
+          "WpfApp_Laskin.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WpfSuunnittelijaProjeti2022/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfAppNotepad/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfAppOlympiaRenkaat/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfApp_Laskin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

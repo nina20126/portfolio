@@ -1,0 +1,141 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "WpfAppNotepad/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/WpfAppNotepad.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WpfAppNotepad.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "WpfAppOlympiaRenkaat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/WpfAppOlympiaRenkaat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WpfAppOlympiaRenkaat.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "WpfApp_Laskin/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/WpfApp_Laskin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WpfApp_Laskin.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "WpfAppNotepad/1.0.0": {
+      "type": "project",
+      "path": "../Notepad/WpfAppNotepad.csproj",
+      "msbuildProject": "../Notepad/WpfAppNotepad.csproj"
+    },
+    "WpfAppOlympiaRenkaat/1.0.0": {
+      "type": "project",
+      "path": "../Olympiarenkaat/WpfAppOlympiaRenkaat.csproj",
+      "msbuildProject": "../Olympiarenkaat/WpfAppOlympiaRenkaat.csproj"
+    },
+    "WpfApp_Laskin/1.0.0": {
+      "type": "project",
+      "path": "../Calculator/WpfApp_Laskin.csproj",
+      "msbuildProject": "../Calculator/WpfApp_Laskin.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "WpfAppNotepad >= 1.0.0",
+      "WpfAppOlympiaRenkaat >= 1.0.0",
+      "WpfApp_Laskin >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\olohu\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\HAMK\\Käyttöliittymäohjelmointi\\WpfSuunnittelijaProjeti2022\\WpfSuunnittelijaProjeti2022\\WpfSuunnittelijaProjeti2022.csproj",
+      "projectName": "WpfSuunnittelijaProjeti2022",
+      "projectPath": "D:\\HAMK\\Käyttöliittymäohjelmointi\\WpfSuunnittelijaProjeti2022\\WpfSuunnittelijaProjeti2022\\WpfSuunnittelijaProjeti2022.csproj",
+      "packagesPath": "C:\\Users\\olohu\\.nuget\\packages\\",
+      "outputPath": "D:\\HAMK\\Käyttöliittymäohjelmointi\\WpfSuunnittelijaProjeti2022\\WpfSuunnittelijaProjeti2022\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\olohu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {
+            "D:\\HAMK\\Käyttöliittymäohjelmointi\\WpfSuunnittelijaProjeti2022\\Calculator\\WpfApp_Laskin.csproj": {
+              "projectPath": "D:\\HAMK\\Käyttöliittymäohjelmointi\\WpfSuunnittelijaProjeti2022\\Calculator\\WpfApp_Laskin.csproj"
+            },
+            "D:\\HAMK\\Käyttöliittymäohjelmointi\\WpfSuunnittelijaProjeti2022\\Notepad\\WpfAppNotepad.csproj": {
+              "projectPath": "D:\\HAMK\\Käyttöliittymäohjelmointi\\WpfSuunnittelijaProjeti2022\\Notepad\\WpfAppNotepad.csproj"
+            },
+            "D:\\HAMK\\Käyttöliittymäohjelmointi\\WpfSuunnittelijaProjeti2022\\Olympiarenkaat\\WpfAppOlympiaRenkaat.csproj": {
+              "projectPath": "D:\\HAMK\\Käyttöliittymäohjelmointi\\WpfSuunnittelijaProjeti2022\\Olympiarenkaat\\WpfAppOlympiaRenkaat.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

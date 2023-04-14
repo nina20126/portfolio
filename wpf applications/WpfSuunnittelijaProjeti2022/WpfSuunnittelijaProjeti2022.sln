@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSuunnittelijaProjeti2022", "WpfSuunnittelijaProjeti2022\WpfSuunnittelijaProjeti2022.csproj", "{132B9C2C-2E94-46AF-8E14-634D17DF726B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppNotepad", "Notepad\WpfAppNotepad.csproj", "{7837DBB0-74BD-4616-B8A8-123A133401FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppOlympiaRenkaat", "Olympiarenkaat\WpfAppOlympiaRenkaat.csproj", "{83B9CB56-8452-4FAC-AE96-327B1D833DAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp_Laskin", "Calculator\WpfApp_Laskin.csproj", "{10EFF323-A844-4E89-8E27-7963F85CE579}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{132B9C2C-2E94-46AF-8E14-634D17DF726B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132B9C2C-2E94-46AF-8E14-634D17DF726B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132B9C2C-2E94-46AF-8E14-634D17DF726B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132B9C2C-2E94-46AF-8E14-634D17DF726B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7837DBB0-74BD-4616-B8A8-123A133401FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7837DBB0-74BD-4616-B8A8-123A133401FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7837DBB0-74BD-4616-B8A8-123A133401FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7837DBB0-74BD-4616-B8A8-123A133401FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B9CB56-8452-4FAC-AE96-327B1D833DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B9CB56-8452-4FAC-AE96-327B1D833DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B9CB56-8452-4FAC-AE96-327B1D833DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B9CB56-8452-4FAC-AE96-327B1D833DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10EFF323-A844-4E89-8E27-7963F85CE579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EFF323-A844-4E89-8E27-7963F85CE579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EFF323-A844-4E89-8E27-7963F85CE579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EFF323-A844-4E89-8E27-7963F85CE579}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72F00DB3-F7B1-4290-8B11-F01F9A6E271D}
+	EndGlobalSection
+EndGlobal
