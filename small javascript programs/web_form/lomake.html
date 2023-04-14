@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lomake</title>
+        <script src="myscript.js"></script>
+    </head>
+    <body>
+        <form onsubmit="testForm(event)" name="myform">
+            <output id="id_result"></output> 
+            <br>
+
+            <!-- NAME -->
+            <label for="fullname">Full name</label>
+            <input type="text" size="60" maxlength="80" id="fullname" required autocomplete="off" placeholder="Full name" autofocus>
+            <br><br>
+
+            <!-- PASSWORD -->
+            <label for="password1">Password</label>
+            <input type="password" size="20" id="password1" name="password1" required>
+            <br>
+            <label for="password2">Repeat password</label>
+            <input type="password" size="20" id="password2" name="password2" required>
+            <br><br>
+
+            <!-- GENDER -->
+            <label for="gender">Gender:</label>
+            <label for="gender_male"><input type="radio" name="gender" id="gender_male" value="male"> male</label>
+
+            <label for="gender_female"><input type="radio" name="gender" id="gender_female" value="female"> female</label>
+
+            <label for="gender_other"><input type="radio" name="gender" id="gender_other" value="other"> other</label>
+            <br><br>
+
+            <!-- HOBBIES -->
+            <label for="hobby_games"><input type="checkbox" name="hobby" id="hobby_games" value="games"> games</label>
+
+            <label for="hobby_music"><input type="checkbox" name="hobby" id="hobby_music" value="music"> music</label>
+
+            <label for="hobby_sports"><input type="checkbox" name="hobby" id="hobby_sports" value="sports"> sports</label>
+
+            <label for="hobby_tv"><input type="checkbox" name="tv" id="hobby_tv" value="tv"> tv</label>
+            <br><br>
+
+
+            <!-- BIRTH DATE -->
+            <label for="birthday">Birthday</label>
+            <input type="datetime-local" id="birthday">
+            <br><br>
+
+
+            <!-- HEIGHT -->
+            <label for="id_number_input">Height</label>
+            <input type="range" name="number_input" id="id_number_input" min="40" max="300" value="100"  oninput="id_number_output.value = this.value">
+
+            <input type="number" id="id_number_output" value="100" min="40" max="300" oninput="id_number_input.value = this.value">
+
+            <br><br>
+
+            <!-- FAVORITE COLOR -->
+            <label for="color">Favorite color</label>
+            <input type="color" id="color">
+            <br><br>
+
+            <!-- HOME COUNTRY -->
+            <label for="country">Home Country:</label>
+            <select name="country" id="country">
+                <optgroup label="Scandinavia">
+                    <option value="Denmark">Denmark</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Finland" selected>Finland</option>
+                </optgroup>  
+                <optgroup label="Baltic">
+                    <option value="Estonia">Estonia</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Russia">Russia</option>
+                </optgroup>
+                
+            </select>
+            <br><br>
+
+            <!-- PROFESSION -->
+            <label for="profession">Profession:</label>
+            <input list="professions" id="profession" size="40">
+            <datalist id="professions">  
+                <option value="nurse"></option>
+                <option value="teacher"></option>
+                <option value="plumber"></option>
+                <option value="bureaucrat"></option>
+            </datalist>
+            <br><br>
+
+            <!-- MESSAGE 
+            <label for="id_message">Message:</label><br>
+            <textarea name="message" id="id_message" rows="6" cols="60" maxlength="1000" placeholder="Type here your message. Max 1000 characters." required></textarea>
+            <br><br> -->
+            
+            <label for="id_textarea">Textarea:</label><br />
+            <textarea cols="80" rows="5" name="textarea" id="id_textarea"></textarea>
+            <br />
+
+
+            <!-- SUBMIT BUTTON -->
+            <input type="submit" value="Send">
+        </form>
+        <br>
+        <hr>
+        <p>Result:</p>
+        <output id="id_success"></output>
+    </body>
+</html>
