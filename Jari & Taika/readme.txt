@@ -1,5 +1,0 @@
-See also presentation video (in finnish language): https://youtu.be/8pU68qLXgeU
-
-This project was a part of Web Desing -period in my first year ICT-studies. Main focus was on HTML5 and CSS3, but also little bit of JavaScript was included in this course. The task was to implement an extensive and high-quality web page based on the given material. There was also four week time limit. Because I had some earlier experience about HTML and CSS, I wanted to challenge myself and this web page was implemented by using Bootstrap.
-
-I feel I learnd the fundamentals of Bootstrap very well and understood it's popularity among web developers. On the other hand, because of learning Bootstrap I didin't have that much time for learning JavaScript. For that reason there is one huge problem in the website that I should fix: The banner (jumbotron) and footer should not reload everytime when moving from site to site.
